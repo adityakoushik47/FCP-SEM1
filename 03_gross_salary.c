@@ -1,8 +1,6 @@
 /* Program 3: Gross Salary */
 #include <stdio.h>
 
-/* Assumption: DA = 40% of basic, HRA = 20% of basic.
-   Change the percentages if your teacher gives different ones. */
 int main() {
     float basic, da, hra, gross;
     printf("Enter basic salary: ");
