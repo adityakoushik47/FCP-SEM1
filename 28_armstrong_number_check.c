@@ -4,18 +4,13 @@
 int main() {
     int n, temp, digit, count = 0, i;
     long sum = 0, p;
-
     printf("Enter a number: ");
     scanf("%d", &n);
-
-    /* count digits */
     temp = n;
     while (temp > 0) {
         count++;
         temp /= 10;
     }
-
-    /* sum of each digit raised to the power of 'count' */
     temp = n;
     while (temp > 0) {
         digit = temp % 10;
@@ -25,7 +20,6 @@ int main() {
         sum += p;
         temp /= 10;
     }
-
     if (sum == n)
         printf("%d is an Armstrong number\n", n);
     else
